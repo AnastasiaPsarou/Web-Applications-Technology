@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="jquery.js"></script>
+
+    <style>
+      button {
+      font-size: 200%;
+      width: 40px;
+      }
+
+      input {
+      font-size: 14px;
+      height: 40px;
+      text-align: right;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+  <table>
+    <tr>
+      <td colspan="4"><input id="display" name="display" disabled></input></td>
+    </tr>
+
+    <tr>
+      <td><button id="button1" value="1" onclick="insrt(1)" > 1 </button></td>
+      <td><button id="button2" value="2" onclick="insrt(2)" >2</button></td>
+      <td><button id="button3" value="3" onclick="insrt(3)" >3</button></td>
+      <td><button id="addButton" onclick="insrt('+')">+</button></td>
+    </tr>
+    <tr>
+      <td><button id="button4" value="4" onclick="insrt(4)" >4</button></td>
+      <td><button id="button5" value="5" onclick="insrt(5)" >5</button></td>
+      <td><button id="button6" value="6" onclick="insrt(6)" >6</button></td>
+      <td><button id="subtractButton" onclick="insrt('-')">-</button></td>
+    </tr>
+    <tr>
+      <td><button id="button7" value="7" onclick="insrt(7)" >7</button></td>
+      <td><button id="button8" value="8" onclick="insrt(8)" >8</button></td>
+      <td><button id="button9" value="9" onclick="insrt(9)" >9</button></td>
+      <td><button id="multiplyButton" onclick="insrt('*')">*</button></td>
+    </tr>
+    <tr>
+      <td><button id="clearButton" onclick="clearInput()">C</button></td>
+      <td><button id="button0" value="0" onclick="insrt(0)">0</button></td>
+      <td><button id="equalsButton" onclick="calcResult()">=</button></td>
+      <td><button id="divideButton" onclick="insrt('/')" >&#247;</button></td>
+    </tr>
+
+  </table>
+
+  <span id='output'><!-- Use this span for writing debug messages or anything else you think will help! --></span>
+
+  <script src="calc.js"></script>
+
+
+  </body>
+
+
+
+</html>
